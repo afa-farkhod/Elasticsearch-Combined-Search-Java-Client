@@ -44,3 +44,10 @@ Elasticsearch Combined Search (Vector + Text) Java Client
 - Printing Search Results:
   - The code calls the `printSearchResults()` method to print the search results for each type of search (vector, text, combined).
   - The method prints the total hits, as well as the ID, score, and source of each search hit.
+2. `ElasticHighLevelVectorTextCombinedSearchApiHTTPS` Java client is almost similar to previous one with only one difference which demonstrates how to use the Elasticsearch Java High-Level REST Client to perform various search operations on an Elasticsearch index over HTTPS with `SSL/TLS`. 
+- Creating the Elasticsearch Client with `SSL/TLS`:
+  - The code calls the `createClient()` method to create an instance of the `RestHighLevelClient` using the provided Elasticsearch IP address, port, username, password, and `truststore` information.
+  - The IP address, port, username, and password are specified as constants or placeholders (ELASTIC-IP-ADDRESS, ELASTIC-PORT, ELASTIC-USERNAME, ELASTIC-PASSWORD) and should be replaced with actual values.
+  - The truststore information includes the truststore file path, password, and loading the truststore into a `KeyStore` instance.
+  - An `SSLContext` is created and initialized with the truststore information.
+  - The `RestClientBuilder` is configured with the `SSLContext`, credentials provider, and hostname verifier to enable `SSL/TLS` connections.
