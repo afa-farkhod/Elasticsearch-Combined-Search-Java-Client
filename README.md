@@ -3,7 +3,7 @@ Elasticsearch Combined Search (Vector + Text) Java Client
 
 ## [Background](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-your-data.html)
 
-- [k-nearest neighbor (kNN) search](https://www.elastic.co/guide/en/elasticsearch/reference/current/knn-search.html) - A k-nearest neighbor (kNN) search finds the k nearest vectors to a query vector, as measured by a similarity metric. Common use cases for kNN include:
+- [k-nearest neighbor (kNN) search](https://www.elastic.co/guide/en/elasticsearch/reference/current/knn-search.html) - A `k-nearest neighbor` (kNN) search finds the k nearest vectors to a query vector, as measured by a similarity metric. Common use cases for kNN include:
   - Relevance ranking based on natural language processing (NLP) algorithms
   - Product recommendations and recommendation engines
   - Similarity search for images or videos
